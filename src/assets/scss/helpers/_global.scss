@@ -1,0 +1,37 @@
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	font: 400 18px/1.15 var(--font-primary);
+
+	color: var(--text);
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.app {
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+
+	min-height: 100vh;
+}
+
+.main {
+	flex-grow: 1;
+}
+
+.container {
+	--padding: 15px;
+	--width: 1200px;
+
+	margin-inline: auto;
+
+	max-width: calc(var(--width) + var(--padding));
+	width: 100%;
+
+	padding-inline: var(--padding);
+}

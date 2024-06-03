@@ -159,7 +159,6 @@ function htmlMin() {
 				basepath: '@file',
 			})
 		)
-		.pipe(htmlmin({ collapseWhitespace: true, removeComments: true }))
 		.pipe(dest(path.build.html));
 }
 
